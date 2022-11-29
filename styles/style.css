@@ -1,0 +1,79 @@
+.bgColor{
+    background-color: #6096ba;
+}
+
+.trashcan:hover{
+    cursor: pointer;
+}
+
+.card{
+    background-color: #e7ecef !important;
+    font-family: 'Sono', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.list-group-item{
+    background-color: #e7ecef !important;
+    font-family: 'Sono', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.form-control{
+    background-color: #e7ecef !important;
+    font-family: 'Sono', sans-serif;
+    font-weight: 400;
+}
+
+.btn-primary{
+    background-color: #274c77 !important;
+    font-family: 'Sono', sans-serif !important;
+    font-weight: 400 !important;
+    border-color: #6c757d ;
+}
+
+.btn-secondary{
+    background-color: #8b8c89 !important;
+    font-family: 'Sono', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.btn-outline-primary{
+    background-color: #8b8c89 ;
+    font-family: 'Sono', sans-serif ;
+    font-weight: 400 ;
+    border-color: #6c757d ;
+    color: white ;
+}
+
+.btn-check:checked+.btn-outline-primary, .btn-outline-primary:hover{
+    background-color: #274c77 ;
+    font-family: 'Sono', sans-serif ;
+    font-weight: 400 ;
+    border-color: #6c757d ;
+    color: white ;
+    box-shadow: none;
+}
+
+.form-check-label{
+    font-family: 'Sono', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.form-range::-webkit-slider-thumb{
+    background-image: url('../Assets/IMG_2794-removebg-preview.png') !important;
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+}
+
+.form-range::-webkit-slider-runnable-track{
+    height: 1rem !important;
+}
+
+
+h1, h5{
+    font-family: 'Sono', sans-serif;
+    font-weight: 600;
+}
