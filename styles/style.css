@@ -72,6 +72,10 @@
     height: 1rem !important;
 }
 
+.list-group-item:hover{
+    background-color: lightgray !important;
+}
+
 
 h1, h5{
     font-family: 'Sono', sans-serif;
