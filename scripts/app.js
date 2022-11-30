@@ -22,9 +22,17 @@ let peoplePerGroupRadio = document.getElementById("peoplePerGroupRadio");
 //set nameArr to local storage
 let nameArr = getLocalStorage();
 
+//Create elements on load
 CreateElements(nameArr);
 
 document.getElementById("customRange").max = `${nameArr.length}`;
+
+name.addEventListener("keypress", function(e){
+  if(e.key === "Enter"){
+    e.preventDefault();
+    addBtn.click();
+  }
+})
 
 addBtn.addEventListener("click", function (e) {
   let letters = /^[A-Za-z]+$/;
