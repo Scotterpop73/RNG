@@ -85,7 +85,7 @@ randomStudentBtn.addEventListener("click", function (e) {
 season5Btn.addEventListener("click", function(e){
   localStorage.clear();
 
-  nameArr = ['aisha', 'amar', 'andy', 'andrew', 'arely', 'brandon', 'carlos', 'caroline', 'chris', 'dan', 'elizar', 'fernando', 'griffin', 'busby', 'isaiah', 'jacob', 'jasmine', 'jeremy', 'jessie', 'john', 'jovann', 'kenneth', 'kent', 'lerissa', 'madeline', 'manuel', 'marcel', 'mark', 'mauricio', 'harrison', 'pedro', 'rafael', 'reed', 'richard', 'samuel', 'shaun', 'ulises']
+  nameArr = ['aisha', 'amar', 'andy', 'andrew', 'arely', 'brandon', 'carlos', 'caroline', 'chris', 'dan', 'elizar', 'fernando', 'griffin', 'busby', 'isaiah', 'jacob', 'jasmine', 'jeremy', 'jessie', 'john', 'jovann', 'kenneth', 'kent', 'lerissa', 'madeline', 'manuel', 'marcel', 'mark', 'harrison', 'pedro', 'rafael', 'reed', 'richard', 'samuel', 'shaun', 'ulises']
 
   CreateElements(nameArr);
   document.getElementById("customRange").max = `${nameArr.length}`;
