@@ -25,8 +25,10 @@ let nameArr = getLocalStorage();
 //Create elements on load
 CreateElements(nameArr);
 
+//setting the max number the slider can have
 document.getElementById("customRange").max = `${nameArr.length}`;
 
+//event listener so the user can hit the enter key to add a name
 name.addEventListener("keypress", function(e){
   if(e.key === "Enter"){
     e.preventDefault();
@@ -34,18 +36,23 @@ name.addEventListener("keypress", function(e){
   }
 })
 
+//adds the name to local storage
 addBtn.addEventListener("click", function (e) {
   let letters = /^[A-Za-z]+$/;
   //Check if the name is empty
   if (name.value == null || name.value == undefined || name.value.length < 1) {
     alert("Enter a Name");
   } else if (name.value.match(letters)) {
+    //saves the name to local starage
     saveToLocalStorageByName(name.value);
 
+    //get all the names saved in local storage
     nameArr = getLocalStorage();
 
+    //call our create elements function passing in our name array
     CreateElements(nameArr);
     document.getElementById("customRange").max = `${nameArr.length}`;
+    //clear the input field
     name.value = "";
   } else {
     alert("You entered numbers or special characters in the name!");
@@ -85,7 +92,7 @@ randomStudentBtn.addEventListener("click", function (e) {
 season5Btn.addEventListener("click", function(e){
   localStorage.clear();
 
-  nameArr = ['aisha', 'amar', 'andy', 'andrew', 'arely', 'brandon', 'carlos', 'caroline', 'chris', 'dan', 'elizar', 'fernando', 'griffin', 'busby', 'isaiah', 'jacob', 'jasmine', 'jeremy', 'jessie', 'john', 'jovann', 'kenneth', 'kent', 'lerissa', 'madeline', 'manuel', 'marcel', 'mark', 'harrison', 'pedro', 'rafael', 'reed', 'richard', 'samuel', 'shaun', 'ulises']
+  nameArr = ['aisha', 'amar', 'andrew', 'brandon', 'carlos', 'caroline', 'chris', 'dan', 'elizar', 'fernando', 'griffin', 'busby', 'isaiah', 'jacob', 'jeremy', 'jessie', 'john', 'jovann', 'kenneth', 'lerissa', 'madeline', 'manuel', 'marcel', 'mark', 'harrison', 'pedro', 'richard', 'ulises']
 
   CreateElements(nameArr);
   document.getElementById("customRange").max = `${nameArr.length}`;
